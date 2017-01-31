@@ -49,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="16dp"
+            android:textStyle="bold"
             android:gravity="center"
             android:textSize="12dp"/>
 
@@ -56,12 +57,14 @@
             android:id="@+id/tvLocal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textStyle="bold"
             android:gravity="center"
             android:textSize="12dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -69,6 +72,7 @@
                 android:id="@+id/tvCidadeUF"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textStyle="bold"
                 android:textSize="12dp"/>
 
         </LinearLayout>
@@ -77,6 +81,7 @@
             android:id="@+id/tvSorteiEspecial"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:textStyle="bold"
             android:gravity="center"
             android:textSize="14dp"/>
 
@@ -122,18 +127,20 @@
 
 
         <TextView
-        android:id="@+id/tvProximoData"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="16dp"/>
+            android:id="@+id/tvProximoData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
 
         <TextView
             android:id="@+id/tvProximoEstimativa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textStyle="bold"
             android:gravity="center"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="4dp"/>
 
 
 
