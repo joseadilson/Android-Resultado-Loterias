@@ -51,23 +51,23 @@ public class LotoFacilFragment extends Fragment {
         // Inflate the layout for this fragment
         final View view = inflater.inflate(R.layout.fragment_loto_facil, container, false);
 
-        concurso       = (TextView)view.findViewById(R.id.tvConcursoLotoFacil);
-        data           = (TextView)view.findViewById(R.id.tvDataLotoFacil);
-        sorteiEspecial = (TextView)view.findViewById(R.id.tvSorteiEspecial);
+        concurso          = (TextView)view.findViewById(R.id.tvConcursoLotoFacil);
+        data              = (TextView)view.findViewById(R.id.tvDataLotoFacil);
+        sorteiEspecial    = (TextView)view.findViewById(R.id.tvSorteiEspecial);
 
-        local     = (TextView)view.findViewById(R.id.tvLocal);
-        cidadeEuf = (TextView)view.findViewById(R.id.tvCidadeUF);
+        local             = (TextView)view.findViewById(R.id.tvLocal);
+        cidadeEuf         = (TextView)view.findViewById(R.id.tvCidadeUF);
 
-        ganhadores = (TextView)view.findViewById(R.id.tvGanhadores);
+        ganhadores        = (TextView)view.findViewById(R.id.tvGanhadores);
 
-        ordemSorteio = (TextView)view.findViewById(R.id.tvOrdemSorteio);
+        ordemSorteio      = (TextView)view.findViewById(R.id.tvOrdemSorteio);
 
-        proximoData      = (TextView)view.findViewById(R.id.tvProximoData);
+        proximoData       = (TextView)view.findViewById(R.id.tvProximoData);
         proximoEstimativa = (TextView)view.findViewById(R.id.tvProximoEstimativa);
 
 
         String urlLotoFacil = "https://api.vitortec.com/loterias/lotofacil/v1.2/";
-        Ion.with(this)
+        Ion.with(getActivity())
                 .load(urlLotoFacil)
                 .asJsonObject()
                 .setCallback(new FutureCallback<JsonObject>() {
