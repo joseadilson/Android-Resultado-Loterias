@@ -1,4 +1,4 @@
-<FrameLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
 
         <LinearLayout
@@ -96,7 +96,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
             android:gravity="center"
             android:text="1º Sorteio"/>
 
@@ -127,7 +127,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
             android:gravity="center"
             android:text="2º Sorteio"/>
 
@@ -175,12 +175,15 @@
             android:id="@+id/tvProximoEstimativaDuplaSena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:textStyle="bold"
             android:gravity="center"
             android:layout_marginTop="4dp"/>
 
-
-
     </LinearLayout>
 
-</FrameLayout>
+
+
+
+
+</ScrollView>
