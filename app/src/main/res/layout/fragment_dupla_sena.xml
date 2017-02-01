@@ -8,6 +8,7 @@
     android:layout_marginRight="16dp"
     android:layout_marginTop="16dp"
     tools:context="com.joseadilson.resultado_loterias.fragments.DuplaSenaFragment">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -91,6 +92,14 @@
             android:layout_height="1dp"
             android:background="#CCC"/>
 
+        <!--Primeiro Sorteio-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="1º Sorteio"/>
+
         <TextView
             android:id="@+id/tvGanhadoresDuplaSena"
             android:layout_width="match_parent"
@@ -105,6 +114,37 @@
 
         <TextView
             android:id="@+id/tvOrdemSorteioDuplaSena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickOrdemSorteio"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="2dp"
+            android:text="Ver números na ordem do sorteio"
+            android:gravity="center"
+            android:textColor="#0000FF"/>
+
+        <!--Segundo Sorteio-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="2º Sorteio"/>
+
+        <TextView
+            android:id="@+id/tvGanhadoresSegundoDuplaSena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#FFF"
+            android:textSize="12dp"
+            android:background="@drawable/textview_design_duplasena"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/tvOrdemSegundoSorteioDuplaSena"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="onClickOrdemSorteio"
