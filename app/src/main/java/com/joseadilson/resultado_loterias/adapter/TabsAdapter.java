@@ -9,6 +9,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 import com.joseadilson.resultado_loterias.fragments.DuplaSenaFragment;
 import com.joseadilson.resultado_loterias.fragments.LotoFacilFragment;
 import com.joseadilson.resultado_loterias.fragments.MegaSenaFragment;
+import com.joseadilson.resultado_loterias.fragments.QuinaFragment;
 
 /**
  * Created by jose on 29/01/2017.
@@ -16,7 +17,7 @@ import com.joseadilson.resultado_loterias.fragments.MegaSenaFragment;
 
 public class TabsAdapter extends FragmentPagerAdapter {
     private Context mContext;
-    private String[] titles = {"DUPLA SENA","LOTO FACIL", "MEGA SENA"};
+    private String[] titles = {"DUPLA SENA","LOTO FACIL", "MEGA SENA", "QUINA"};
 
     public TabsAdapter(FragmentManager fm, Context context) {
         super(fm);
@@ -34,6 +35,8 @@ public class TabsAdapter extends FragmentPagerAdapter {
             fragment = new LotoFacilFragment();
         } else if (position == 2) {
             fragment = new MegaSenaFragment();
+        } else if (position == 3) {
+            fragment = new QuinaFragment();
         }
 
         Bundle bundle = new Bundle();
